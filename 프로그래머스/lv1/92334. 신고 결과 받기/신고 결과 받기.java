@@ -24,7 +24,8 @@ class Solution {
 	   //ban_user 객체에서 피신고자의 아이디로 report_map에 키값으로 넣어 신고자 이름 출력
 	   for(String user : ban_user) {    //ban_user 객체에서 피신고자의 아이디로
 		   for(String reporter : report_map.get(user)) {    //report_map에 키값으로 넣어 신고자 이름 출력
-			   answer[Arrays.asList(id_list).indexOf(reporter)] += 1;
+			   answer[Arrays.asList(id_list).indexOf(reporter)] += 1; //id_list에서 신고자의 인덱스값을 가져오고,
+                                                                        //answer의 해당 인덱스에 +1 처리
 		   }
 	   }
 	   return answer;
