@@ -27,7 +27,7 @@ class Solution {
 	public static int get(List<Integer> draw_list) {
 		if(draw_list.size()>1) {
 			for(int idx=1; idx<draw_list.size(); idx++) {
-				if(draw_list.get(idx)!=0 && draw_list.get(idx)==draw_list.get(idx-1)) {
+				if(draw_list.get(idx)!=0 && draw_list.get(idx)==draw_list.get(idx-1)) { //조건 : list.get(idx) == list.get(idx-1)
 					draw_list.remove(idx);  //List삭제
 					draw_list.remove(idx-1);    //List삭제
 					return 2;   //조건 만족 했으므로 인형수 +2
