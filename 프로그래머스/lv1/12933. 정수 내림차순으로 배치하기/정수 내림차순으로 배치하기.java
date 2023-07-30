@@ -9,13 +9,12 @@ class Solution {
 			num_list.add(a%10);
 			a /= 10;
 		}
-		System.out.println(num_list);
 		Collections.sort(num_list,Collections.reverseOrder());
-		String nu = "";
-		for(Long num : num_list) {
-			nu += num;
+		String num = "";
+		for(Long l : num_list) {
+			num += l;
 		}
-        answer = Long.parseLong(nu);
+        answer = Long.parseLong(num);
         return answer;
     }
 }
