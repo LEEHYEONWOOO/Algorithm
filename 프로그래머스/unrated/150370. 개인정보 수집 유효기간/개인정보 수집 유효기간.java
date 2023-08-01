@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Solution {
     public List<Integer> solution(String today, String[] terms, String[] privacies) {
         for(int i=0;i<privacies.length;i++) {
