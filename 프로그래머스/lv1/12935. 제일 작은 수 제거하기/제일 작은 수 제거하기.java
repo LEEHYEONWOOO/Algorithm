@@ -5,11 +5,7 @@ class Solution {
         if(arr.length == 1){
             return new int[]{-1};
         }
-        List<Integer> list = new ArrayList<>();
-		for(int a : arr) {
-			list.add(a);
-		}
-		int min = Collections.min(list);
+		int min = Arrays.stream(arr).min().getAsInt();
 		answer = Arrays.stream(arr)
 					.filter(a -> a!=min)
 					.toArray();
